@@ -1,0 +1,9 @@
+{
+  "singleQuote": true,
+  "scssFormatter.singleQuote": true,
+  "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 80,
+  "prettier.trailingComma": "all",
+  "prettier.cssEnable": ["css", "less", "sass"]
+}
