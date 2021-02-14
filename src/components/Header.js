@@ -15,6 +15,7 @@ function Header({
     if (isAddFormShowing && showSearchBar) {
       setShowSearchBar(!showSearchBar);
     }
+// eslint-disable-next-line  
   }, [isAddFormShowing]);
 
   function toggleSearch() {

@@ -11,16 +11,18 @@ function FormContact({
 }) {
   const [errorMessage, setErrorMessage] = useState('');
 
+  
   useEffect(() => {
     if (!contactToUpdate?.id) {
       onUpdateContact({
-        id: '',
+        id: '',      
         fullName: '',
         email: '',
         mobile: '',
         description: '',
       });
     }
+  // eslint-disable-next-line
   }, [showAddForm]);
 
   //Validations
@@ -28,6 +30,7 @@ function FormContact({
     const fieldsIgnore = ['id', 'description'];
     let errorFields = [];
 
+    // eslint-disable-next-line
     Object.keys(contactToUpdate).map((input) => {
       if (!contactToUpdate[input] && !fieldsIgnore.includes(input)) {
         errorFields.push(input);
